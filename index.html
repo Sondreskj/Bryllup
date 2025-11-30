@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vårt Bryllup</title>
+    <meta name="description" content="Velkommen til vår bryllupsside">
+    
+    <!-- Google Fonts: Great Vibes (Script) og Lato (Lesbar tekst) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigasjon -->
+    <nav>
+        <div class="nav-container">
+            <a href="#velkommen" class="logo">Vi skal gifte oss</a>
+            <ul class="nav-links">
+                <li><a href="#informasjon">Info</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#galleri">Galleri</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#rsvp" class="btn-nav">RSVP</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Velkomstseksjon -->
+    <header id="velkommen" class="hero">
+        <div class="hero-content">
+            <div class="line-art-container">
+                <!-- SVG Olive Branch -->
+                <svg viewBox="0 0 100 100" class="olive-branch">
+                    <path d="M50,90 Q60,50 80,20 M50,90 Q40,60 20,30" fill="none" stroke="currentColor" stroke-width="1" />
+                    <ellipse cx="80" cy="20" rx="3" ry="6" transform="rotate(30 80 20)" fill="currentColor" opacity="0.6"/>
+                    <ellipse cx="20" cy="30" rx="3" ry="6" transform="rotate(-30 20 30)" fill="currentColor" opacity="0.6"/>
+                    <ellipse cx="60" cy="50" rx="3" ry="6" transform="rotate(10 60 50)" fill="currentColor" opacity="0.6"/>
+                    <ellipse cx="40" cy="60" rx="3" ry="6" transform="rotate(-10 40 60)" fill="currentColor" opacity="0.6"/>
+                </svg>
+            </div>
+            <h1>Navn & Navn</h1>
+            <p class="subtitle">Vi gleder oss til å feire kjærligheten med dere</p>
+            <p class="date">24. August 2025</p>
+        </div>
+    </header>
+
+    <!-- Informasjon (Dato & Sted) -->
+    <section id="informasjon" class="section-light">
+        <div class="container">
+            <h2>Tid & Sted</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Vielsen</h3>
+                    <p>Kl. 13:00</p>
+                    <p>Gamle Kirke</p>
+                    <p>Kirkeveien 1, 0000 Sted</p>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="info-card">
+                    <h3>Middagen</h3>
+                    <p>Kl. 17:00</p>
+                    <p>Selskapslokalet</p>
+                    <p>Festveien 2, 0000 Sted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="section-white">
+        <div class="container">
+            <h2>Program for dagen</h2>
+            <ul class="timeline">
+                <li>
+                    <span class="time">13:00</span>
+                    <span class="event">Vielse</span>
+                </li>
+                <li>
+                    <span class="time">14:30</span>
+                    <span class="event">Fotografering & Mingling</span>
+                </li>
+                <li>
+                    <span class="time">17:00</span>
+                    <span class="event">Middag</span>
+                </li>
+                <li>
+                    <span class="time">21:00</span>
+                    <span class="event">Kaker & Dans</span>
+                </li>
+                <li>
+                    <span class="time">01:00</span>
+                    <span class="event">Nattmat</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Påmelding (RSVP) -->
+    <section id="rsvp" class="section-green">
+        <div class="container">
+            <h2>Påmelding</h2>
+            <p>Vi håper du kan komme! Vennligst svar innen 1. juni.</p>
+            
+            <!-- Alternativ 1: Knapp til Google Forms (Anbefalt for mobil) -->
+            <a href="DIN_GOOGLE_FORMS_LINK_HER" target="_blank" class="btn-rsvp">Gå til påmeldingsskjema</a>
+            
+            <!-- Alternativ 2: Embedded Google Form (Fjern kommentarer under for å bruke) -->
+            <!-- 
+            <div class="form-container">
+                <iframe src="DIN_GOOGLE_FORMS_EMBED_LINK_HER" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Laster inn…</iframe>
+            </div> 
+            -->
+        </div>
+    </section>
+
+    <!-- Bildegalleri -->
+    <section id="galleri" class="section-white">
+        <div class="container">
+            <h2>Våre Øyeblikk</h2>
+            <div class="gallery-grid">
+                <!-- Plassholderbilder - Bytt ut src med dine egne bilder -->
+                <div class="gallery-item"><img src="https://placehold.co/600x400/e8f0e8/4a4a4a?text=Bilde+1" alt="Parbilde"></div>
+                <div class="gallery-item"><img src="https://placehold.co/400x600/e8f0e8/4a4a4a?text=Bilde+2" alt="Parbilde"></div>
+                <div class="gallery-item"><img src="https://placehold.co/600x600/e8f0e8/4a4a4a?text=Bilde+3" alt="Parbilde"></div>
+                <div class="gallery-item"><img src="https://placehold.co/600x400/e8f0e8/4a4a4a?text=Bilde+4" alt="Parbilde"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section-light">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Har du spørsmål eller allergier vi bør vite om?</p>
+            <p>Send oss gjerne en e-post:</p>
+            <a href="mailto:brudeparet@eksempel.no" class="email-link">brudeparet@eksempel.no</a>
+            
+            <div class="footer-art">
+                <!-- Liten olivenkvist dekorasjon -->
+                <svg viewBox="0 0 100 50" class="olive-branch-small">
+                    <path d="M10,25 Q50,5 90,25" fill="none" stroke="currentColor" stroke-width="1" />
+                    <ellipse cx="50" cy="15" rx="2" ry="4" fill="currentColor" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Navn & Navn</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
